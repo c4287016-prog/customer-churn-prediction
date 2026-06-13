@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 
 # Model load karo
-with open('../models/churn_model.pkl', 'rb') as f:
+with open('models/churn_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open('../models/features.pkl', 'rb') as f:
+with open('models/features.pkl', 'rb') as f:
     feature_names = pickle.load(f)
 
 st.set_page_config(page_title="Customer Churn Predictor", page_icon="📊")
